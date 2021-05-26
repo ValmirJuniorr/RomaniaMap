@@ -23,7 +23,7 @@ def get_arguments():
     origin = args.origin if args.origin else cities.ARAD
 
     if origin not in cities_names:
-        raise ValueError('{} is an invalid values for origin city param,  must be one of this values: {}'
+        raise ValueError('{} is an invalid value for origin city param, it must be one of this values: {}'
                          .format(origin, cities_names))
 
     return {
