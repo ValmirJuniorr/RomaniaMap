@@ -2,7 +2,7 @@ ORADEA = 'Oradea'
 ZERIND = 'Zerind'
 SIBIU = 'Sibiu'
 ARAD = 'Arad'
-TIMISORA = 'Timisora'
+TIMISOARA = 'Timisoara'
 LUGOJ = 'Lugoj'
 MEHADIA = 'Mehadia'
 DROBETA = 'Drobeta'
@@ -22,11 +22,11 @@ HIRSOVA = 'Hirsova'
 graph = {
     ORADEA: [[ZERIND, 71], [SIBIU, 151]],
     ZERIND: [[ARAD, 75], [ORADEA, 71]],
-    ARAD: [[SIBIU, 140], [TIMISORA, 118], [ZERIND, 75]],
+    ARAD: [[SIBIU, 140], [TIMISOARA, 118], [ZERIND, 75]],
     SIBIU: [[ORADEA, 151], [ARAD, 140], [FAGARAS, 99], [RIMMICU_VILCEA, 80]],
     FAGARAS: [[BUCHAREST, 211], [SIBIU, 99]],
-    TIMISORA: [[ARAD, 118], [LUGOJ, 111]],
-    LUGOJ: [[MEHADIA, 70], [TIMISORA, 111]],
+    TIMISOARA: [[ARAD, 118], [LUGOJ, 111]],
+    LUGOJ: [[MEHADIA, 70], [TIMISOARA, 111]],
     MEHADIA: [[LUGOJ, 70], [DROBETA, 75]],
     DROBETA: [[CRAVIOVA, 120], [MEHADIA, 75]],
     CRAVIOVA: [[DROBETA, 120], [PITESTI, 138], [RIMMICU_VILCEA, 146]],

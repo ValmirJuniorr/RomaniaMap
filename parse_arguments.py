@@ -1,4 +1,5 @@
 import argparse
+
 import data.cities_graph as cities
 
 
@@ -22,7 +23,8 @@ def get_arguments():
     origin = args.origin if args.origin else cities.ARAD
 
     if origin not in cities_names:
-        raise ValueError('origin city param must be onde of this values: {}'.format(cities_names))
+        raise ValueError('{} is an invalid values for origin city param,  must be one of this values: {}'
+                         .format(origin, cities_names))
 
     return {
         'origin': origin
