@@ -15,7 +15,7 @@ class Solution:
 
         steps.append(node)
 
-        return reversed(steps)
+        return list(reversed(steps))
 
     def print(self):
         if self.fail():
@@ -23,7 +23,7 @@ class Solution:
 
         steps = self.steps()
 
-        for node in steps:
+        for node in steps[:-1]:
             print(node.city, '-> ', end='')
 
-        print('Custo total:', self.node.total_cost())
+        print(steps[-1].city, '||', 'Custo total:', self.node.total_cost())
