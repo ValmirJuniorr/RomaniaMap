@@ -9,21 +9,23 @@ class Solution:
         node = self.node
         steps = []
 
-        while node and node.father:
+        while node:
             steps.append(node)
             node = node.father
 
-        steps.append(node)
-
         return list(reversed(steps))
 
-    def print(self):
+    def print(self, print_with_heuristic):
         if self.fail():
             print('Não foi encontrado uma solução')
 
         steps = self.steps()
 
-        for node in steps[:-1]:
-            print(node.city, '-> ', end='')
+        for i, node in enumerate(steps):
+            print('--------------------------------------------------------')
+            if print_with_heuristic:
+                print('{}:'.format(i), node.city, '| custo total: {} | heuristica: {}'.format(node.total_cost(), node.heuristic_value))
+            else:
+                print('{}:'.format(i), node.city, '| custo total: {}'.format(node.total_cost()))
+            print('--------------------------------------------------------')
 
-        print(steps[-1].city, '||', 'Custo total:', self.node.total_cost())
