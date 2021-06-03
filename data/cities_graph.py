@@ -41,3 +41,27 @@ graph = {
     NEAMT: [[IASI, 87]],
     EFORIE: [[HIRSOVA, 86]],
 }
+
+
+heuristic_values = {
+    ARAD: 366,
+    BUCHAREST: 0,
+    CRAVIOVA: 160,
+    DROBETA: 242,
+    FAGARAS: 176,
+    GIURGIU: 77,
+    EFORIE: 131,
+    ORADEA: 380,
+    ZERIND: 374,
+    SIBIU: 253,
+    TIMISOARA: 329,
+    LUGOJ: 244,
+    MEHADIA: 241,
+    RIMMICU_VILCEA: 193,
+    PITESTI: 100,
+    URZICENI: 80,
+    HIRSOVA: 151,
+    VASLUI: 199,
+    IASI: 226,
+    NEAMT: 234,
+}

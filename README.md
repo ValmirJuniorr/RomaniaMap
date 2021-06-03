@@ -1,10 +1,9 @@
-# Projeto VaccumWorld
+# Projeto RomaniaMap
 
 ---
 
 ## Sobre
-
- O projeto RomaniaMap é uma atividade prática, da disciplina de Inteligência Artificial, do curso de Pós-Graduação em Computação, da Universidade Federal do Ceará. 
+ O projeto RomaniaMap é uma atividade prática, da disciplina de Inteligência Artificial, do curso de Pós-Graduação em Computação, da Universidade Federal do Ceará.
 
 ---
 
@@ -20,8 +19,9 @@
 ```bash
 
 # Argumentos
- -h, --help # MenuofHelp
- -o, --origin # origin where the agent must starts search to get to Bucharest
+ -h, --help #MenuofHelp
+ -o, --origin #origin where the agent must starts search to get to Bucharest
+ -a, --algorithm #Algorithm that will be used in the search the acceptable values are: [estrela, largura]
 
 # Para vizualizar o menu de ajuda, digite no terminal:
 python main.py -h
